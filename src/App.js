@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import ParentToChild from './components/ParentToChild';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>H1 do "pai"</h1>
+      <p>O texto abaixo é um elemento que está no pai e que recebeu em props.label o texto</p>      
+      <ParentToChild label="Texto que aparecerá, ou seja, assim que se faz uma comunicação direta entre componentes" />
     </div>
   );
 }
